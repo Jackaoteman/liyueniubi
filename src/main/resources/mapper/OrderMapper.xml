@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.liyue.liyueniubi.mapper.OrderMapper">
+  <resultMap id="BaseResultMap" type="com.liyue.liyueniubi.domain.Order">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="price" jdbcType="DECIMAL" property="price" />
+    <result column="state" jdbcType="INTEGER" property="state" />
+    <result column="createTime" jdbcType="DATE" property="createtime" />
+    <result column="updateTime" jdbcType="TIMESTAMP" property="updatetime" />
+    <result column="orderNo" jdbcType="VARCHAR" property="orderno" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, name, price, state, createTime, updateTime, orderNo
+  </sql>
+</mapper>
